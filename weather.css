@@ -1,0 +1,197 @@
+*{
+    font-family: "Poppins";
+}
+body{display: flex;border-radius: 10px; background-color: rgb(164, 162, 162);justify-content: center;}
+.place__input::placeholder{
+    font-weight: bold;
+}
+.search{
+    width: 180px;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 10px;
+}
+.weather__today{
+    display: flex;
+    width: 100%;
+    height: 100;
+    flex-direction: column;
+    margin: 5px;
+}
+.sidebar{
+    padding: 20px;
+    flex-basis: 20rem;
+    position: relative;
+    background-color: white;
+    border-radius: 13px 0px 0px 13px; 
+}
+.condition{
+    width: 100px;
+    height: 100px;
+}
+
+.chosen__place{
+    border-radius: 8px;
+    font-weight: bold;
+    background-image: url("icons/pngtree-times-square-in-new-york-picture-image_3472102.jpg");
+    background-size: cover;
+    width:300;
+    height: 100px ;
+    display: flex;
+    justify-content: center;
+
+}
+.chosen__place--text{
+    text-align: center;
+    color: white;
+    margin: auto 0;
+   
+}
+.main{
+    padding: 30px;
+    border-radius:0px 13px 13px 0px;
+    display: flex;
+    flex-basis: 40rem;
+    flex-direction: column;
+    background-color: #F7F7F8;
+}
+.nav{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.f{
+    background-color: white;
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+
+}
+.c{
+background-color: white;
+border-radius: 10px;
+width: 30px;
+height: 30px;
+text-align: center;
+}
+.days{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+}
+.highlights{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+.block{
+    flex: 0 0 calc(33.33% - 10px);
+    margin: 5px;
+    padding: 0px;
+    height: 160px;
+    width: 200px;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    border-radius: 13px;
+    justify-content: space-between;
+}
+.wind{
+    flex: 2;
+}
+.block__title , .time__left{
+    opacity: 0.5;
+}
+
+
+.temp{
+    text-align: center;
+}
+.block__layout{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.up{
+    background-image: url("icons/up-arrow.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+.down{
+    background-image: url("icons/download.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.highlights .sun{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #0000;
+    margin-bottom: -35px;
+}
+.up , .times{
+    flex-basis: 48%;
+    text-align: center;
+    padding: 10px;
+}
+.time, .time__left{
+    margin-bottom :0px;
+}
+.bt{
+    margin-bottom: -20px;
+}
+.bts{
+    margin-bottom: 0px;
+}
+.bold{
+    font-weight: 700;
+    font-size: x-large;
+}
+.temperature__today{
+    font-size: 46px;
+}
+.status__today , .sky__today{
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .icon__status img  , .icon__sky img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  .day{
+    padding: 10px;
+  }
+  .chosen__place{
+    margin-top: 100px;
+  }
+  .today{
+    background-color: rgb(135, 131, 131);
+  }
+  
+  
+  
+  

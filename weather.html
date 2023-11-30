@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="search">
+            <form class="form">
+            <img src="" alt="" class="search__icon">
+            <input type="text" class="place__input" placeholder="Search for a city...">
+        </form>
+        </div>
+        <div class="weather__today">
+            <img src="" alt="" class="condition">
+            <h2 class="temperature__today"></h2>
+            <p class="daytime"></p>
+        </div>
+
+        <div class="chosen__place">
+            <div class="chosen__place--text">M'saken</div>
+        </div>
+        <p><strong>Note : The data aquired from the api is rarely accurate</strong></p>
+        <p><strong>The time zone is set to GMT+0. </strong></p>
+    </div>
+    <div class="main">
+        <div class="days">
+
+            <div class="day today" data-index="0">
+                <p class="day0"><strong>Sun</strong></p>
+                <span class="day__status "><img class="day0im" src="icons/raining.png" alt="" width="30" height="30"></span>
+                <p class="day__temperature day0t">Rainy</p>
+            </div>
+
+            <div class="day" data-index="1">
+                <p class="day1"><strong>Mon</strong></p>
+                <span class="day__status "> <img src="storm.png" alt="" width="30" height="30" class="day1im"></span>
+                <p class="day__temperature day1t" >Stormy</p>
+            </div>
+
+            <div class="day"  data-index="2">
+                <p class="day2"><strong>Tue</strong></p>
+                <span class="day__status "><img src="raining.png" alt="" width="30" height="30" class="day2im"></span>
+                <p class="day__temperature day2t">Raining</p>
+            </div>
+
+            <div class="day" data-index="3">
+                <p class="day3"><strong>Wed</strong></p>
+                <span class="day__status "> <img src="raining.png" alt="" width="30" height="30" class="day3im"></span>
+                <p class="day__temperature day3t">Raining</p>
+            </div>
+
+            <div class="day"data-index="4">
+                <p class="day4"><strong>Thu</strong></p>
+                <span class="day__status "> <img src="sun.png" alt="" width="30" height="30" class="day4im"></span>
+                <p class="day__temperature day4t">Sunny</p>
+            </div>
+
+            <div class="day" data-index="5">
+                <p class="day5"><strong>Fri</strong></p>
+                <span class="day__status"> <img src="storm.png" alt="" width="30" height="30" class="day5im"></span>
+                <p class="day__temperature day5t">Stormy</p>
+            </div>
+
+            <div class="day" data-index="6">
+                <p class="day6"><strong>Sat</strong></p>
+                <span class="day__status"> <img src="sun.png" alt="" width="30" height="30" class="day6im"></span>
+                <p class="day__temperature day6t">Sunny</p>
+            </div>
+        </div>
+        <h2>Today's Highlights</h2>
+            <div class="highlights">
+                <div class="block wind">
+                    <div class="block__layout">
+                    <p class="block__title">Wind Status</p>
+                    <p class="wind__status bold">7.70km/h</p>
+                    <p> </p>
+                    </div>
+                </div>
+                <div class="block sun bts">
+                    <div class="block__layout">
+                    <p class="block__title bt">Sunrise & Sunset</p>
+                    <div class="sun">
+                        <span class="up"></span>
+                        <div class="times">
+                            <p class="sunrise time">6:35</p>
+                            <p class="time__left--sunrise time__left">-12:30</p>
+                        </div>
+                    </div>
+                    <div class="sun">
+                        <span class="down"></span>
+                        <div class="times">
+                            <p class="sunset time">6:35</p>
+                            <p class="time__left--sunset time__left">-12:30</p>
+                        </div>
+                    </div>
+
+
+                    </div>
+                </div>
+                <div class="humidity block">
+                    <div class="block__layout">
+                        <p class="block__title">Humidity</p>
+                    <p class="humidity__level bold">12%</p>
+                    <span class="humidity__status">Normal 🤙</span>
+                    </div>
+                </div>
+                <div class="visibility block">
+                    <div class="block__layout">
+                        <p class="block__title">Visibility</p>
+                    <h2 class="visibility__level">5.5Km</h2>
+                    <span class="visibility__status">Average ☹️</span>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    
+    <script src="weather.js"></script>
+</body>
+</html>
